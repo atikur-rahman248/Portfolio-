@@ -1,3 +1,8 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,24 +10,69 @@ body {
   background: #f9f9f9;
   color: #333;
 }
-header {
+.navbar {
+  position: sticky;
+  top: 0;
   background: #007acc;
   color: white;
-  padding: 2rem;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+  padding: 4rem 2rem;
   text-align: center;
+  background: #e6f2ff;
 }
+
 section {
-  padding: 2rem;
-  margin: 1rem;
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
 }
+
+section h2 {
+  margin-bottom: 1rem;
+  color: #007acc;
+}
+.skill-box span {
+  display: inline-block;
+  background: #007acc;
+  color: white;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
 .project {
   background: white;
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 8px;
 }
+
+.project a {
+  color: #007acc;
+  font-weight: bold;
+}
 footer {
   text-align: center;
   padding: 1rem;
-  background: #efefef;
+  background: #ddd;
 }
+
+
