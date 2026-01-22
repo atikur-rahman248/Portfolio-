@@ -43,13 +43,20 @@ body {
 }
 
 .resume-btn{
-  margin-left: 15px;
-  padding: 6px 12px;
+  margin-left: 10px;
+  padding: 8px 14px;
   background: yellow;
   color: #007acc;
-  border-radius: 5px;
+  border-radius: 6px;
   font-weight: bold;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .resume-btn {
+    margin: 10px;
+    text-align: center;
+  }
 }
 
 .menu-toggle {
@@ -109,10 +116,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
   .nav-links {
     display: none;
     flex-direction: column;
@@ -120,18 +123,20 @@ footer {
     position: absolute;
     top: 60px;
     right: 0;
-    width: 200px;
+    width: 100px;
   }
 
   .nav-links.show {
     display: flex;
   }
+}
 
   .nav-link,
   .resume-btn {
     margin: 10px;
   }
 }
+
 
 
 
