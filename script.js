@@ -26,3 +26,10 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+// Close mobile menu when clicking a link
+document.querySelectorAll(".nav-link").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("show");
+  });
+});
+
