@@ -58,6 +58,14 @@ body {
   color: white;
   cursor: pointer;
 }
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+}
  
   
 .hero {
@@ -124,6 +132,7 @@ footer {
     margin: 10px;
   }
 }
+
 
 
 
