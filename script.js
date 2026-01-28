@@ -1,3 +1,5 @@
+console.log("JS connected");
+
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.getElementById("menu-toggle");
   const navLinks = document.getElementById("nav-links");
@@ -17,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 
 
 
