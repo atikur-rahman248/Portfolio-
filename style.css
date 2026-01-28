@@ -25,17 +25,17 @@ body {
   color: white;
 }
 
-.nav-link {
+.nav-links {
   display: flex;
-  align-item: center;
 }
 
-
-.nav-links  {
+.nav-link {
   color: white;
   margin-left: 15px;
   text-decoration: none;
   font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
 .nav-link.active {
@@ -139,6 +139,7 @@ footer {
     margin: 12px;
   }
 }
+
 
 
 
