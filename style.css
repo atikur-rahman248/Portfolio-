@@ -22,7 +22,7 @@ body {
 }
 
 .logo {
-  color: white
+  color: white;
 }
 
 .nav-link {
@@ -52,12 +52,7 @@ body {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
-  .resume-btn {
-    margin: 10px;
-    text-align: center;
-  }
-}
+
 
 .menu-toggle {
   display: none;
@@ -73,6 +68,8 @@ body {
   background: white;
   margin: 5px 0;
 }
+
+
  
   
 .hero {
@@ -115,41 +112,8 @@ footer {
   background: #ddd;
 }
 
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: #007acc;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100px;
-  }
 
-  .nav-links.show {
-    display: flex;
-  }
-}
 
-  .nav-link,
-  .resume-btn {
-    margin: 10px;
-  }
-}
-.menu-toggle {
-  display: none;
-  cursor: pointer;
-}
-
-.menu-toggle span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background: white;
-  margin: 5px 0;
-}
-
-/* Mobile */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -169,7 +133,13 @@ footer {
   .nav-links.show {
     display: flex;
   }
+  
+.nav-link,
+  .resume-btn {
+    margin: 12px;
+  }
 }
+
 
 
 
