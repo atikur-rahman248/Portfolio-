@@ -1,35 +1,49 @@
 
-const toggle = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
+  <footer>
+    <p>&copy; 2026 Atikur Rahman</p>
+  </footer>
 
-toggle.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
-});
 
-const sections = document.querySelectorAll("section");
-const navItems = document.querySelectorAll(".nav-link");
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
 
-window.addEventListener("scroll", () => {
-  let current = "";
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
 
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 100;
-    if (scrollY >= sectionTop) {
-      current = section.getAttribute("id");
-    }
-  });
+    const sections = document.querySelectorAll("section");
+    const navItems = document.querySelectorAll(".nav-link");
 
-  navItems.forEach(link => {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === "#" + current) {
-      link.classList.add("active");
-    }
-  });
-});
-// Close mobile menu when clicking a link
-document.querySelectorAll(".nav-link").forEach(link => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("show");
-  });
-});
+    window.addEventListener("scroll", () => {
+      let current = "";
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (window.scrollY >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navItems.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
+        }
+      });
+    });
+
+    
+    document.querySelectorAll(".nav-link").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("show");
+      });
+    });
+  </script>
+  <!-- JS END -->
+
+</body>
+</html>
+
+
 
